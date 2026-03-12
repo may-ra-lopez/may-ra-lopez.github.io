@@ -12,3 +12,35 @@ p {
   font-family: verdana;
   font-size: 20px;
 }
+
+.content-wrapper {
+  display: flex;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap:60px;
+  margin-top: 40px;
+}
+
+.lead img {
+  width: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  height: 320px;
+}
+
+.fav {
+  max-width: 250px;
+}
+
+.fav ul {
+  padding-left: 20px;
+}
+
+
+.about-daisy {
+  text-align: center;
+  max-width: 800px;
+  margin: 40px auto;
+}
