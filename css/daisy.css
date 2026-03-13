@@ -16,11 +16,26 @@ p {
 .content-wrapper {
   display: flex;
   text-align: center;
-  display: flex;
   justify-content: center;
   align-items: flex-start;
   gap:60px;
   margin-top: 40px;
+}
+
+.navigation {
+  background-color: lavender;   
+  padding: 10px 20px;       
+  display: flex;            
+  align-items: center;      
+  gap: 15px;
+  border: 1px solid purple;                
+}
+
+.nav-logo {
+  width: 50px;       
+  height: auto;      
+  display: inline-block; 
+  vertical-align: middle; 
 }
 
 .lead img {
@@ -32,15 +47,48 @@ p {
 
 .fav {
   max-width: 250px;
+  padding: 15px;
+  background-color: lavender;    
+  border: 1px solid purple;
+  border-radius: 10px; 
 }
 
 .fav ul {
-  padding-left: 20px;
+  padding-left: 0;
+  list-style: none;
 }
 
+.fav li {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 10px;
+}
+
+.fav li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icon_daisy.png");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  transition: transform 0.4s ease;
+}
+
+.fav li:hover::before{
+  transform: rotate(360deg);
+}
 
 .about-daisy {
   text-align: center;
   max-width: 800px;
   margin: 40px auto;
+  background-color: lavender;    
+  border: 1px solid purple;
+  border-radius: 10px;
+  font-family: verdana;
+  font-size: 15px
 }
+
